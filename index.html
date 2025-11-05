@@ -25,6 +25,36 @@
       margin: 0 auto;
       padding: 20px;
     }
+    
+    /* 추가: Publications 스타일 */
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    li {
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+    
+    li strong {
+      display: block;
+      margin-bottom: 5px;
+      line-height: 1.4;
+    }
+    
+    li em {
+      display: block;
+      margin-top: 3px;
+    }
+    
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    
     .inline-btn {
       all: unset;                    
       font-size: 15px;               
@@ -51,7 +81,7 @@
       display: block;
       opacity: 1;
     }
-  </style>
+</style>
 </head>
 <body>
   <div class="wrapper">
@@ -81,73 +111,78 @@
       </ul>
 
       <h2>Publications</h2>
+      <h3>Journal Papers</h3>
       <ul>
-        <li>ff
-          
-          <strong>BIC-LoRa: Bits in Chirp Shapes to Boost Throughput in LoRa</strong>
-          <a href="https://drive.google.com/file/d/1s80VwRy_NmhiofiA_F94wwNF7fUanRVe/view?usp=sharing" target="_blank">[PDF]</a>
-          <a href="https://docs.google.com/presentation/d/1GtDmCVG-qd-tTn24YZMZyJu0qLlcK0La/edit?usp=sharing" target="_blank">[Slides]</a>
+        <li>
+          <strong>D²-PLC: Holistic Design and Implementation of High-Datarate Duplex DC Power Line Communication Network</strong>
+          <a href="https://drive.google.com/file/d/1e8LM8-kIRCU2hwGwYZ60GXEbbMTcJ6iC/view" target="_blank">[PDF]</a>
           <button class="inline-btn" onclick="toggleImage('bicImage', this)">[Figure]</button><br>
-          <em><strong>Dongrak Choi</strong>, Eunjeong Park, Mingyu Park, Jeongyeop Paek, and Saewoong Bahk</em><br>
-          <em>ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN)</em>, 2024.<br>
+          <em><strong>Dongrak Choi</strong>, Yubin Choi, Yonghoon Jeong, Jeongyeup Paek, and Saewoong Bahk</em><br>
+          <em>IEEE Internet of Things Journal, vol. 12, no. 21, pp. 45325-45340, 2025.<br></em>
           <img id="bicImage" src="BIC.jpg" alt="BIC-LoRa figure" class="publication-image">
         </li>
 
-        
         <li>
-          <strong>Cupid: Fast and Reliable Convergecast-over-UWB Protocol for Dense Internet of Things [Best Paper Runner-up]</strong>
-          <a href="https://drive.google.com/file/d/1BMN6ZRgQ7noF3KETLTbfRB0l7DIlARTa/view?usp=sharing" target="_blank">[PDF]</a>
-          <button class="inline-btn" onclick="toggleImage('cupidImage', this)">[Figure]</button><br>
-          <em>Jimin Park, <strong>Dongrak Choi</strong>, Jeongyeop Paek, and Saewoong Bahk</em><br>
-          <em>IEEE 21st Annual International Conference on Distributed Computing in Smart Systems and the Internet of Things (DCOSS-IoT)</em>, 2025.<br>
-          <img id="cupidImage" src="CUPID.jpg" alt="Cupid figure" class="publication-image">
-        </li>
-
-        
-        <li>
-          <strong>Slot-Size Adaptation and Utility-Based Packet Aggregation for IEEE 802.15.4e Time-Slotted Communication Networks</strong>
-          <a href="https://drive.google.com/file/d/1Q9Me7vjUherOuqJJhdHV8Abcl-6nLNif/view?usp=sharing" target="_blank">[PDF]</a>
-          <button class="inline-btn" onclick="toggleImage('asapImage', this)">[Figure]</button><br>
-          <em>Hongchan Kim, <strong>Dongrak Choi</strong>, Juhun Shin, Jeongyeop Paek, and Saewoong Bahk</em><br>
-          <em>IEEE Internet of Things Journal</em>, vol. 11, no. 9, pp. 16382–16397, 2024.<br>
-          <img id="asapImage" src="ASAP.jpg" alt="ASAP figure" class="publication-image">
-        </li>
-
-        
-        <li>
-          <strong>Quick6TiSCH: Accelerating Formation of 6TiSCH Networks with TSCH and RPL</strong>
-          <a href="https://drive.google.com/file/d/17j1F_p_WApDhPvnQAfL1Ya4C4l5sagAo/view?usp=sharing" target="_blank">[PDF]</a>
-          <button class="inline-btn" onclick="toggleImage('quickImage', this)">[Figure]</button><br>
-          <em>Hongchan Kim, <strong>Dongrak Choi</strong>, Juhun Shin, Jeongyeop Paek, and Saewoong Bahk</em><br>
-          <em>IEEE 21st International Conference on Mobile Ad-Hoc and Smart Systems (MASS)</em>, 2024.<br>
-          <img id="quickImage" src="QUICK.jpg" alt="Quick6TiSCH figure" class="publication-image">
+          <strong>ASCEND: Altitude Selection for High-quality Cellular Connectivity on Drones</strong>
+          <a href="https://drive.google.com/file/d/1evDM7bUyuEsd2oXDny96XuaCmSe0eQT0/view" target="_blank">[PDF]</a>
+          <!-- <a href="https://docs.google.com/presentation/d/1GtDmCVG-qd-tTn24YZMZyJu0qLlcK0La/edit?usp=sharing" target="_blank">[Slides]</a> -->
+          <button class="inline-btn" onclick="toggleImage('bicImage', this)">[Figure]</button><br>
+          <em>Yongjae Yoo, Jihwan Suh, <strong>Dongrak Choi</strong>, Jeongyeup Paek, and Saewoong Bahk</em><br>
+          <em>to appear in IEEE Transactions on Vehicular Technology, 2025.<br></em>
+          <img id="bicImage" src="BIC.jpg" alt="BIC-LoRa figure" class="publication-image">
         </li>
       </ul>
+
+      <h3>Conference Papers</h3>
+      <ul> 
+        <li>
+          <strong>Experimental Study on mmWave FMCW Radar for Detecting Objects beyond Transparent Barriers</strong>
+          <a href="https://drive.google.com/file/d/1e8LM8-kIRCU2hwGwYZ60GXEbbMTcJ6iC/view" target="_blank">[PDF]</a>
+          <!-- <a href="https://docs.google.com/presentation/d/1GtDmCVG-qd-tTn24YZMZyJu0qLlcK0La/edit?usp=sharing" target="_blank">[Poster]</a> -->
+          <button class="inline-btn" onclick="toggleImage('bicImage', this)">[Figure]</button><br>
+          <em><strong>Dongrak Choi</strong> and Saewoong Bahk</em><br>
+          <em>2025 16th International Conference on Information and Communication Technology Convergence (ICTC), Jeju Island, Republic of Korea, 2025,<br></em>
+          <img id="bicImage" src="BIC.jpg" alt="BIC-LoRa figure" class="publication-image">
+        </li>
+        <li>
+          <strong>Demo: A Programmable High-Throughput Duplex DC-PLC Testbed for Power and Data Integration</strong>
+          <a href="https://drive.google.com/file/d/1e8LM8-kIRCU2hwGwYZ60GXEbbMTcJ6iC/view" target="_blank">[PDF]</a>
+          <a href="https://docs.google.com/presentation/d/1GtDmCVG-qd-tTn24YZMZyJu0qLlcK0La/edit?usp=sharing" target="_blank">[Poster]</a>
+          <button class="inline-btn" onclick="toggleImage('bicImage', this)">[Figure]</button><br>
+          <em><strong>Dongrak Choi</strong>, Yonghoon Jeong, Yubin Choi, and Saewoong Bahk</em><br>
+          <em>2025 IEEE 33rd International Conference on Network Protocols (ICNP), Seoul, Republic of Korea, 2025<br></em>
+          <img id="bicImage" src="BIC.jpg" alt="BIC-LoRa figure" class="publication-image">
+        </li>
+      </ul>
+      
 
       <h2>Awards and Honors</h2>
       <ul>
-        <li>Student Travel Grant, ACM/IEEE IPSN 2024</li>
+        <!-- <li>Student Travel Grant, ACM/IEEE IPSN 2024</li> -->
       </ul>
 
       <h2>Intellectual Properties</h2>
-      <ul>
-        <li>
+      <ul> TBD
+        <!-- <li>
           KR 10-2025-0057644: LoRa communication device and the modulation and demodulation methods used by the communication device<br>
           <em><strong>Dongrak Choi</strong>, Eunjeong Park, Saewoong Bahk</em><br>
         </li>
         <li>
           KR 10-2025-0057659: Method for collecting data using concurrent transmission in ultra-wideband based multi-hop wireless networks<br>
           <em>Jimin Park, <strong>Dongrak Choi</strong>, Saewoong Bahk</em><br>
-        </li>
+        </li> -->
       </ul>
 
-      <h2>Lectures</h2>
+      <h2>Experience</h2>
+      <h3>Research Projects</h3>
+      <h3>Lectures</h3>
       <ul>
-        <li>“Advanced Mobile Communication Systems” at SNU, Summer. 2025.</li>
-        <li>“Advanced Mobile Communication Systems” at SNU, Summer. 2024.</li>
+        <li> TBD </li>
+        <li> 430.469, <em>"Design of Network Protocols with Experiments"</em>, Seoul National University, Fall 2025.</li>
+        <!-- <li>“Advanced Mobile Communication Systems” at SNU, Summer. 2024.</li>
         <li>“Creative Engineering Design” at SNU, Fall. 2024.</li>
         <li>“Creative Engineering Design” at SNU, Fall. 2023.</li>
-        <li>“Engineering Mathematics” at SNU, Fall. 2022.</li>
+        <li>“Engineering Mathematics” at SNU, Fall. 2022.</li> -->
       </ul>
     </section>
 
