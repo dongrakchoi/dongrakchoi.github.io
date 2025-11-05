@@ -11,6 +11,7 @@
   <style>
     body {
       font-size: 15px;
+      line-height: 1.8;  /* 추가: 전체 줄 간격 */
     }
     .profile-name {
       font-size: 1.8em;
@@ -19,6 +20,7 @@
     }
     .profile-info {
       margin-bottom: 1.5em;
+      line-height: 2;  /* 추가: 프로필 정보 줄 간격 */
     }
     .wrapper {
       max-width: 1600px;
@@ -26,7 +28,18 @@
       padding: 20px;
     }
     
-    /* 추가: Publications 스타일 */
+    /* 추가: Education, Research Interest 등 섹션 스타일 */
+    h2 {
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      line-height: 2;  /* 문단 줄 간격 */
+      margin-bottom: 15px;
+    }
+    
+    /* Publications 스타일 */
     ul {
       list-style-type: none;
       padding-left: 0;
@@ -34,18 +47,19 @@
     
     li {
       margin-bottom: 25px;
-      line-height: 1.6;
+      line-height: 1.8;  /* 줄 간격 조정 */
     }
     
     li strong {
       display: block;
-      margin-bottom: 5px;
-      line-height: 1.4;
+      margin-bottom: 8px;  /* 제목 아래 여백 */
+      line-height: 1.5;
     }
     
     li em {
       display: block;
-      margin-top: 3px;
+      margin-top: 5px;  /* 저자/학회 정보 위 여백 */
+      line-height: 1.6;
     }
     
     h3 {
