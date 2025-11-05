@@ -1,207 +1,182 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Minimal by Steve Smith</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Dongrak Choi</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Minimal</h1>
-        <p>A Theme for GitHub Pages</p>
-        <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
-        <ul>
-          <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>GitHub Flavored Markdown</h1>
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body {
+      font-size: 15px;
+    }
+    .profile-name {
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-bottom: 0.2em;
+    }
+    .profile-info {
+      margin-bottom: 1.5em;
+    }
+    .wrapper {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .inline-btn {
+      all: unset;                    
+      font-size: 15px;               
+      color: #39c;
+      cursor: pointer;
+      display: inline;
+      transition: color 0.3s ease;
+    }
+    .inline-btn:hover {
+      color: #069;
+    }
+    .inline-btn:focus {
+      outline: none;
+    }
+    .publication-image {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .publication-image.show {
+      display: block;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="ghlee.png" alt="Profile Photo" style="width:280px; height:auto; margin-bottom: 10px;">
+      <h1>Dongrak Choi</h1>
+      <p>Ph.D. Student @ <a href="https://sites.google.com/netlab.snu.ac.kr/netlabhome" target="_blank">NETLAB</a></p>
+      <p>Seoul, South Korea</p>
+      <p>I'm a Ph.D. student in the Department of Electrical and Computer Engineering at Seoul National University, advised by Prof. <a href="https://sites.google.com/netlab.snu.ac.kr/netlabhome/people/faculty" target="_blank">Saewoong Bahk</a>.</p>
+      <p><a href="https://scholar.google.com/citations?user=g9I5EcIAAAAJ&hl=ko" target="_blank">Visit my Google Scholar</a></p>
+      <p><a href="CV.pdf" target="_blank">View CV [PDF]</a></p>
+    </header>
 
-        <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>Integrated M.S./Ph.D. Program in NETLAB, Seoul National University (2023–Present)</li>
+        <li>B.S. the Department of Electrical and Electronic Engineering, Yonsei University, (2017–2023)</li>
+        <li>Hana Academy Seoul (2014–2017)</li>
+      </ul>
 
-        <p>Let's get the whole "linebreak" thing out of the way. The next paragraph contains two phrases separated by a single newline character:</p>
+      <h2>Research Interest</h2>
+      <ul>
+        <li>TBD</li>
+        <li>Power line communication (PLC)</li>
+        <li>mmWave FMCW Radar</li>
+      </ul>
 
-        <p>Roses are red<br>
-        Violets are blue</p>
+      <h2>Publications</h2>
+      <ul>
+        <li>ff
+          
+          <strong>BIC-LoRa: Bits in Chirp Shapes to Boost Throughput in LoRa</strong>
+          <a href="https://drive.google.com/file/d/1s80VwRy_NmhiofiA_F94wwNF7fUanRVe/view?usp=sharing" target="_blank">[PDF]</a>
+          <a href="https://docs.google.com/presentation/d/1GtDmCVG-qd-tTn24YZMZyJu0qLlcK0La/edit?usp=sharing" target="_blank">[Slides]</a>
+          <button class="inline-btn" onclick="toggleImage('bicImage', this)">[Figure]</button><br>
+          <em><strong>Dongrak Choi</strong>, Eunjeong Park, Mingyu Park, Jeongyeop Paek, and Saewoong Bahk</em><br>
+          <em>ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN)</em>, 2024.<br>
+          <img id="bicImage" src="BIC.jpg" alt="BIC-LoRa figure" class="publication-image">
+        </li>
 
-        <p>The next paragraph has the same phrases, but now they are separated by two spaces and a newline character:</p>
+        
+        <li>
+          <strong>Cupid: Fast and Reliable Convergecast-over-UWB Protocol for Dense Internet of Things [Best Paper Runner-up]</strong>
+          <a href="https://drive.google.com/file/d/1BMN6ZRgQ7noF3KETLTbfRB0l7DIlARTa/view?usp=sharing" target="_blank">[PDF]</a>
+          <button class="inline-btn" onclick="toggleImage('cupidImage', this)">[Figure]</button><br>
+          <em>Jimin Park, <strong>Dongrak Choi</strong>, Jeongyeop Paek, and Saewoong Bahk</em><br>
+          <em>IEEE 21st Annual International Conference on Distributed Computing in Smart Systems and the Internet of Things (DCOSS-IoT)</em>, 2025.<br>
+          <img id="cupidImage" src="CUPID.jpg" alt="Cupid figure" class="publication-image">
+        </li>
 
-        <p>Roses are red<br><br>
-        Violets are blue</p>
+        
+        <li>
+          <strong>Slot-Size Adaptation and Utility-Based Packet Aggregation for IEEE 802.15.4e Time-Slotted Communication Networks</strong>
+          <a href="https://drive.google.com/file/d/1Q9Me7vjUherOuqJJhdHV8Abcl-6nLNif/view?usp=sharing" target="_blank">[PDF]</a>
+          <button class="inline-btn" onclick="toggleImage('asapImage', this)">[Figure]</button><br>
+          <em>Hongchan Kim, <strong>Dongrak Choi</strong>, Juhun Shin, Jeongyeop Paek, and Saewoong Bahk</em><br>
+          <em>IEEE Internet of Things Journal</em>, vol. 11, no. 9, pp. 16382–16397, 2024.<br>
+          <img id="asapImage" src="ASAP.jpg" alt="ASAP figure" class="publication-image">
+        </li>
 
-        <p>Oh, and one thing I cannot stand is the mangling of words with multiple underscores in them like perform_complicated_task or do_this_and_do_that_and_another_thing.</p>
+        
+        <li>
+          <strong>Quick6TiSCH: Accelerating Formation of 6TiSCH Networks with TSCH and RPL</strong>
+          <a href="https://drive.google.com/file/d/17j1F_p_WApDhPvnQAfL1Ya4C4l5sagAo/view?usp=sharing" target="_blank">[PDF]</a>
+          <button class="inline-btn" onclick="toggleImage('quickImage', this)">[Figure]</button><br>
+          <em>Hongchan Kim, <strong>Dongrak Choi</strong>, Juhun Shin, Jeongyeop Paek, and Saewoong Bahk</em><br>
+          <em>IEEE 21st International Conference on Mobile Ad-Hoc and Smart Systems (MASS)</em>, 2024.<br>
+          <img id="quickImage" src="QUICK.jpg" alt="Quick6TiSCH figure" class="publication-image">
+        </li>
+      </ul>
 
-        <h2>A bit of the GitHub spice</h2>
+      <h2>Awards and Honors</h2>
+      <ul>
+        <li>Student Travel Grant, ACM/IEEE IPSN 2024</li>
+      </ul>
 
-        <p>In addition to the changes in the previous section, certain references are auto-linked:</p>
+      <h2>Intellectual Properties</h2>
+      <ul>
+        <li>
+          KR 10-2025-0057644: LoRa communication device and the modulation and demodulation methods used by the communication device<br>
+          <em><strong>Dongrak Choi</strong>, Eunjeong Park, Saewoong Bahk</em><br>
+        </li>
+        <li>
+          KR 10-2025-0057659: Method for collecting data using concurrent transmission in ultra-wideband based multi-hop wireless networks<br>
+          <em>Jimin Park, <strong>Dongrak Choi</strong>, Saewoong Bahk</em><br>
+        </li>
+      </ul>
 
-        <ul>
-          <li>SHA: be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2</li>
-          <li>User@SHA ref: <a href="https://github.com/mojombo/product/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2" class="commit-link">mojombo@<tt>be6a8cc</tt></a></li>
-          <li>User/Project@SHA: <a href="https://github.com/mojombo/god/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2" class="commit-link">mojombo/god@<tt>be6a8cc</tt></a></li>
-          <li>#Num: <a href="https://github.com/github/product/issues/1" class="issue-link" title="Baseline: What is up in the air right now?">#1</a></li>
-          <li>User/#Num: mojombo#1</li>
-          <li>User/Project#Num: <a href="https://github.com/mojombo/god/issues/1" class="issue-link" title="The server is not available (or you do not have permissions to access it)">mojombo/god#1</a></li>
-        </ul>
+      <h2>Lectures</h2>
+      <ul>
+        <li>“Advanced Mobile Communication Systems” at SNU, Summer. 2025.</li>
+        <li>“Advanced Mobile Communication Systems” at SNU, Summer. 2024.</li>
+        <li>“Creative Engineering Design” at SNU, Fall. 2024.</li>
+        <li>“Creative Engineering Design” at SNU, Fall. 2023.</li>
+        <li>“Engineering Mathematics” at SNU, Fall. 2022.</li>
+      </ul>
+    </section>
 
-        <p>These are dangerous goodies though, and we need to make sure email addresses don't get mangled:</p>
+    <footer>
+      <p><small>Hosted on GitHub Pages using the <a href="https://github.com/orderedlist/minimal">Minimal</a> theme.</small></p>
+      <a href="https://www.hitwebcounter.com" target="_blank">
+          <img src="https://hitwebcounter.com/counter/counter.php?page=21173660&style=0007&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" />
+      </a>            
+    </footer>
+  </div>
 
-        <p>My email addy is <a href="mailto:tom@github.com">tom@github.com</a>.</p>
-
-        <h2>Math is hard, let's go shopping</h2>
-
-        <p>In first grade I learned that 5 &gt; 3 and 2 &lt; 7. Maybe some arrows. 1 -&gt; 2 -&gt; 3. 9 &lt;- 8 &lt;- 7.</p>
-
-        <p>Triangles man! a^2 + b^2 = c^2</p>
-
-        <h2>We all like making lists</h2>
-
-        <p>The above header should be an H2 tag. Now, for a list of fruits:</p>
-
-        <ul>
-          <li>Red Apples</li>
-          <li>Purple Grapes</li>
-          <li>Green Kiwifruits</li>
-        </ul>
-
-        <p>Let's get crazy:</p>
-
-        <ol>
-          <li>
-            <p>This is a list item with two paragraphs. Lorem ipsum dolor<br>
-            sit amet, consectetuer adipiscing elit. Aliquam hendrerit<br>
-            mi posuere lectus.</p>
-
-            <p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet<br>
-            vitae, risus. Donec sit amet nisl. Aliquam semper ipsum<br>
-            sit amet velit.</p>
-          </li>
-          <li><p>Suspendisse id sem consectetuer libero luctus adipiscing.</p></li>
-        </ol>
-
-        <p>What about some code <strong>in</strong> a list? That's insane, right?</p>
-
-        <ol>
-          <li>
-            <p>In Ruby you can map like this:</p>
-
-            <pre><code>['a', 'b'].map { |x| x.uppercase }</code></pre>
-          </li>
-          <li>
-            <p>In Rails, you can do a shortcut:</p>
-
-            <pre><code>['a', 'b'].map(&amp;:uppercase)</code></pre>
-          </li>
-        </ol>
-
-        <p>Some people seem to like definition lists</p>
-
-        <dl>
-          <dt>Lower cost</dt>
-          <dd>The new version of this product costs significantly less than the previous one!</dd>
-          <dt>Easier to use</dt>
-          <dd>We've changed the product so that it's much easier to use!</dd>
-        </dl>
-
-        <h2>I am a robot</h2>
-
-        <p>Maybe you want to print <code>robot</code> to the console 1000 times. Why not?</p>
-
-        <pre><code>def robot_invasion
-  puts("robot " * 1000)
-end
-</code></pre>
-
-        <p>You see, that was formatted as code because it's been indented by four spaces.</p>
-
-        <p>How about we throw some angle braces and ampersands in there?</p>
-
-        <pre><code>&lt;div class="footer"&gt;
-    &amp;copy; 2004 Foo Corporation
-&lt;/div&gt;
-</code></pre>
-
-        <h2>Set in stone</h2>
-
-        <p>Preformatted blocks are useful for ASCII art:</p>
-
-        <pre>             ,-.
-    ,     ,-.   ,-.
-   / \   (   )-(   )
-   \ |  ,.&gt;-(   )-&lt;
-    \|,' (   )-(   )
-     Y ___`-'   `-'
-     |/__/   `-'
-     |
-     |
-     |    -hrr-
-  ___|_____________
-</pre>
-
-        <h2>Playing the blame game</h2>
-
-        <p>If you need to blame someone, the best way to do so is by quoting them:</p>
-
-        <blockquote>
-        <p>I, at any rate, am convinced that He does not throw dice.</p>
-        </blockquote>
-
-        <p>Or perhaps someone a little less eloquent:</p>
-
-        <blockquote>
-        <p>I wish you'd have given me this written question ahead of time so I<br>
-        could plan for it... I'm sure something will pop into my head here in<br>
-        the midst of this press conference, with all the pressure of trying to<br>
-        come up with answer, but it hadn't yet...</p>
-
-        <p>I don't want to sound like<br>
-        I have made no mistakes. I'm confident I have. I just haven't - you<br>
-        just put me under the spot here, and maybe I'm not as quick on my feet<br>
-        as I should be in coming up with one.</p>
-        </blockquote>
-
-        <h2>Table for two</h2>
-
-        <table>
-          <tbody>
-        <tr>
-            <th>ID</th>
-        <th>Name</th>
-        <th>Rank</th>
-          </tr>
-          <tr>
-            <td>1</td>
-        <td>Tom Preston-Werner</td>
-        <td>Awesome</td>
-          </tr>
-          <tr>
-            <td>2</td>
-        <td>Albert Einstein</td>
-        <td>Nearly as awesome</td>
-          </tr>
-        </tbody>
-        </table>
-
-        <h2>Crazy linking action</h2>
-
-        <p>I get 10 times more traffic from <a href="http://google.com/" title="Google">Google</a> than from<br>
-        <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="http://github.com/orderedlist">Steve Smith</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-  </body>
+  <script src="javascripts/scale.fix.js"></script>
+  <script>
+    function toggleImage(id, btn) {
+      const img = document.getElementById(id);
+      if (img.classList.contains("show")) {
+        img.classList.remove("show");
+        setTimeout(() => {
+          img.style.display = "none";
+        }, 300);
+        btn.textContent = "[Figure]";
+      } else {
+        img.style.display = "block";
+        setTimeout(() => {
+          img.classList.add("show");
+        }, 10);
+        btn.textContent = "[Hide Figure]";
+      }
+    }
+  </script>
+</body>
 </html>
