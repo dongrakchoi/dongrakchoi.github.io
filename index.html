@@ -11,7 +11,6 @@
   <style>
     body {
       font-size: 15px;
-      line-height: 1.8;
     }
     .profile-name {
       font-size: 1.8em;
@@ -26,59 +25,6 @@
       margin: 0 auto;
       padding: 20px;
     }
-    
-    /* 추가: 레이아웃 조정 */
-    header {
-      width: 250px;  /* 왼쪽 사이드바 폭 */
-      float: left;
-      position: fixed;
-    }
-    
-    section {
-      width: calc(100% - 300px);  /* 오른쪽 컨텐츠 영역 넓히기 */
-      float: right;
-      padding-left: 50px;
-    }
-    
-    /* h2, h3, p, ul 스타일 */
-    h2 {
-      margin-top: 35px;
-      margin-bottom: 20px;
-    }
-    
-    h3 {
-      margin-top: 25px;
-      margin-bottom: 15px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #e0e0e0;
-    }
-    
-    p {
-      line-height: 2;
-      margin-bottom: 15px;
-    }
-    
-    ul {
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-    
-    li {
-      margin-bottom: 15px;
-    }
-    
-    section li strong {
-      display: block;
-      margin-bottom: 8px;
-      line-height: 1.5;
-    }
-    
-    section li em {
-      display: block;
-      margin-top: 5px;
-      line-height: 1.6;
-    }
-    
     .inline-btn {
       all: unset;                    
       font-size: 15px;               
@@ -105,21 +51,7 @@
       display: block;
       opacity: 1;
     }
-    
-    /* 반응형: 작은 화면에서 */
-    @media print, screen and (max-width: 960px) {
-      header {
-        position: relative;
-        width: 100%;
-        float: none;
-      }
-      section {
-        width: 100%;
-        float: none;
-        padding-left: 0;
-      }
-    }
-</style>
+  </style>
 </head>
 <body>
   <div class="wrapper">
