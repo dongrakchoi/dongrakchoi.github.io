@@ -55,8 +55,13 @@ a:hover small {
 }
 
 .wrapper {
-  width:1300px;
+  /* width:1300px;
+  margin:0 auto; */
+  overflow-x: auto;   /* 가로 스크롤 켜기 */
+  overflow-y: visible;
+  width: 1300px;      /* 기존 설정 유지 */
   margin:0 auto;
+  
 }
 
 blockquote {
